@@ -59,7 +59,7 @@
 
     <section class="main-content">
 
-      <p>Palavras: ARARAQUARA SETEMBRO AVIADOR ANADOR</p>
+      <p class="words-caca-palavra">Palavras: <span></span></p>
 
       <div id="canvas">
 
@@ -75,11 +75,20 @@
         <script type="text/javascript" src="jquery.puzzle.js"></script>
 
         <script type="text/javascript">
+
+          var letters = new Array('BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL');
+
+          var newHTML = [];
+          $.each(letters, function(index, value) {
+            newHTML.push('<span>' + value + '</span>');
+          });
+          $(".words-caca-palavra").html(newHTML.join("-"));
+
           jQuery(function($){
             $('#canvas').puzzle({
-              words: ['ARARAQUARA','SETEMBRO','AVIADOR','ANADOR']
-              , cols: 20
-              , rows: 20
+              words: letters,
+              cols: 20,
+              rows: 20
             });
           });
         </script>
