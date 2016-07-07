@@ -42,12 +42,12 @@ button::-moz-focus-inner {
 
 /* indicates when a square has been selected */
 #puzzle .selected {
-  background-color: orange;
+  background-color: yellow;
 }
 
-/* indicates that the square is part of a word that has been found */ 
+/* indicates that the square is part of a word that has been found */
 #puzzle .found {
-  background-color: blue;
+  background-color: green;
   color: white;
 }
 
@@ -72,7 +72,6 @@ button::-moz-focus-inner {
   -webkit-column-gap: 20px;
   column-count: 2;
   column-gap: 20px;
-  width: 300px;
 }
 
 #words ul {
@@ -87,7 +86,7 @@ button::-moz-focus-inner {
 /* indicates that the word has been found */
 #words .wordFound {
   text-decoration: line-through;
-  color: gray;
+  color: red;
 }
 
 /**
