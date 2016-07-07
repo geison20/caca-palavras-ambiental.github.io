@@ -9,46 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 
-    <style>
 
-      .letra {
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        text-align: center;
-        position: absolute;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 11px;
-        border: 1px solid black;
-        cursor: pointer;
-        background-color: #FFFFFF;
-        margin: -1px 0px 0px -1px;
-      }
-
-      .highlight {
-        background-color: #FFCC00;
-      }
-
-      .found {
-        background-color: #33CC33;
-      }
-
-      .canvas {
-        position: relative;
-        border: 1px solid black;
-        margin: auto;
-      }
-
-      .box {
-        width: 25px;
-        height: 23px;
-        position: absolute;
-        border: 2px solid #FF0000;
-        -moz-border-radius: 15px;
-        -webkit-border-radius: 15px;
-        border-radius: 15px;
-      }
-    </style>
 
   </head>
   <body>
@@ -59,11 +20,7 @@
 
     <section class="main-content">
 
-      <p class="words-caca-palavra">Palavras: <span></span></p>
 
-      <div id="canvas">
-
-      </div>
 
 
 
@@ -71,27 +28,6 @@
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/geison20/caca-palavras-ambiental.github.io">Caca-palavras-ambiental.GitHub.io</a> foi desenvolvido por: <a href="https://github.com/geison20">Gêisson Machado Antunes</a>.</span>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.puzzle.js"></script>
-
-        <script type="text/javascript">
-
-          var letters = new Array('BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL','BRASIL');
-
-          var newHTML = [];
-          $.each(letters, function(index, value) {
-            newHTML.push('<span>' + value + '</span>');
-          });
-          $(".words-caca-palavra").html(newHTML.join("-"));
-
-          jQuery(function($){
-            $('#canvas').puzzle({
-              words: letters,
-              cols: 20,
-              rows: 20
-            });
-          });
-        </script>
 
       </footer>
     </section>
